@@ -1,0 +1,84 @@
+[{
+  "_id": {
+    "$oid": "5fcb7438f895e23fb8e8e712"
+  },
+  "name": "No coffee in the kitchen",
+  "status": "open",
+  "priority": "normal",
+  "country": "he",
+  "incidentId": "1607169080469",
+  "createdAt": 1607169080469,
+  "updatedAt": 1607170547714,
+  "history": [
+    [
+      {
+        "key": "status",
+        "value": "closed"
+      },
+      {
+        "key": "country",
+        "value": "he"
+      },
+      {
+        "key": "updatedAt",
+        "value": 1607169574980
+      }
+    ],
+    [
+      {
+        "key": "country",
+        "value": "en"
+      },
+      {
+        "key": "updatedAt",
+        "value": 1607169871235
+      }
+    ]
+  ]
+},{
+  "_id": {
+    "$oid": "5fcb7534c8ff6b3efccbbb17"
+  },
+  "name": "Forgot umbrella",
+  "status": "open",
+  "priority": "a",
+  "country": "he",
+  "incidentId": "1607169332559",
+  "createdAt": 1607169332559,
+  "updatedAt": 1607169896181,
+  "history": [
+    [
+      {
+        "key": "priority",
+        "value": "b"
+      },
+      {
+        "key": "updatedAt",
+        "value": 1607169743465
+      }
+    ]
+  ]
+},{
+  "_id": {
+    "$oid": "5fcb754cc8ff6b3efccbbb18"
+  },
+  "name": "Taccos missing",
+  "status": "closed",
+  "priority": "normal",
+  "country": "es",
+  "incidentId": "1607169356042",
+  "createdAt": 1607169356042,
+  "updatedAt": 1607169944566,
+  "history": [
+    [
+      {
+        "key": "status",
+        "value": "open"
+      },
+      {
+        "key": "updatedAt",
+        "value": 1607169356042
+      }
+    ]
+  ]
+}]

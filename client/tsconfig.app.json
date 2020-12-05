@@ -1,0 +1,25 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@core/*": ["src/app/@core/*"],
+      "@shared/*": ["src/app/@shared/*"],
+      "@env/*": ["src/environments/*"]
+    },
+    "types": []
+  },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts",
+    "src/app/incident/history/history-type-name/history-type-name.component.ts",
+    "src/app/incident/history/history-type-country/history-type-country.component.ts",
+    "src/app/incident/history/history-type-priority/history-type-priority.component.ts",
+    "src/app/incident/history/history-type-status/history-type-status.component.ts",
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
+}

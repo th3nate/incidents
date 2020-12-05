@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "77a0b9cf-8867-49f2-978b-9c50c3c86be4",
+		"name": "Incidents",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Incident",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Taccos missing\",\r\n    \"status\": \"open\",\r\n    \"priority\": \"normal\",\r\n    \"country\": \"es\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/incidents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incidents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Incident",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/incidents/1607154952774",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incidents",
+						"1607154952774"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Incident",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"incident 345435\",\r\n    \"status\": \"closed\",\r\n    \"priority\": \"sever\",\r\n    \"country\": \"en\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/incidents/1607154952774",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incidents",
+						"1607154952774"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c81b78c9-2242-43c2-a0f0-077b539f56ba",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "92b71823-98b4-416c-a7df-cd421503ce14",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

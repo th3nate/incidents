@@ -1,0 +1,9 @@
+<app-nav></app-nav>
+<div class="d-flex justify-content-center">
+    <mat-card class="shadow-none">
+        <h2 class="mt-5 mb-3 text-center">Available Incidents</h2>
+        <mat-card class="mb-2" *ngFor="let incident of currentIncidents; index as i; trackBy: trackByFn">
+            <pre [routerLink]="['incident', incident.incidentId]"><strong>id:</strong> {{incident.incidentId}}<br><strong>name:</strong> {{incident.name}}<br><strong>status:</strong> {{incident.status}}<br><strong>priority:</strong>{{incident.priority}}<br><strong>country:</strong>{{incident.country}}</pre>
+        </mat-card>
+    </mat-card>
+</div>
